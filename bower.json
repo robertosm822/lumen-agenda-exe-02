@@ -1,0 +1,23 @@
+{
+  "name": "CodeAgenda",
+  "description": "Agenda Telefonica",
+  "main": "",
+  "authors": [
+    "Roberto Soares <robertomelo822@gamil.com>"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "font-awesome": "fontawesome#~4.4.0"
+  }
+}
