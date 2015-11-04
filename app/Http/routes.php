@@ -14,4 +14,4 @@
 //$app->get('/', function () use ($app) {
  //   return $app->welcome();
 //});
-$app->get('/',['as' => 'partials.contato','uses' => 'IndexController@index']);
+$app->get('/',['as' => 'agenda','uses' => 'AgendaController@index']);

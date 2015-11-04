@@ -1,9 +1,13 @@
 @extends('layout')
 
 @section('content')
-    @foreach($pessoas as $pessoa)
-    <div class="col-md-6">
-        @include('partials.contato')
-    </div>
-    @endforeach
+    
+    <?php foreach ($pessoas as $pessoa) { ?>
+        
+        <div class="col-md-6">
+            @include('partials.contato')
+        </div>
+    <?php }?>
+    
+    
 @endsection

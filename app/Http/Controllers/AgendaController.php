@@ -10,9 +10,10 @@ use \CodeAgenda\Entities\Pessoa;
 
 class AgendaController extends Controller
 {
-    public function Index(){
+    public function index(){
         $pessoas = Pessoa::all();
-        return view( "agenda", compact($pessoas));
+        //var_dump($pessoas);
+        return view( 'agenda', compact('pessoas'));
     }
    
 }

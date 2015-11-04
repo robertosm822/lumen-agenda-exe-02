@@ -20,6 +20,7 @@ class Telefone extends Model{
         'descricao',
         'apelido',
         'codepais',
+        'ddd',
         'prefixo',
         'sufixo'
         
