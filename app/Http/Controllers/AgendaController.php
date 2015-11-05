@@ -10,8 +10,10 @@ use \CodeAgenda\Entities\Pessoa;
 
 class AgendaController extends Controller
 {
-    public function index(){
-        $pessoas = Pessoa::all();
+    public function index($letra = "A"){
+        $pessoas = Pessoa::where('apelido', 'like', $letra.'%')->get();
+        //lista todas as pessoas e seus relacionamentos
+        //$pessoas = Pessoa::all();
         //var_dump($pessoas);
         return view( 'agenda', compact('pessoas'));
     }
