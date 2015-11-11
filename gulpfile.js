@@ -9,7 +9,8 @@ elixir( function (mix){
         
             .scripts([
                 'jquery.js',
-                'bootstrap.js'
+                'bootstrap.js',
+                'custom.js'
             ])
             .less('app.less');
             

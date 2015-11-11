@@ -23,3 +23,15 @@ $app->get('/{letra}',[
     'as' => 'agenda.letra',
     'uses' => 'AgendaController@index'
 ]);
+
+$app->get('/{id}/apagar', [
+    'as' => 'partials.apagar', 'uses' => 'AgendaController@apagar'
+]);
+
+$app->get('/{id}/destroy', [
+    'as' => 'agenda', 'uses' => 'AgendaController@destroy'
+]);
+
+$app->get('/{id}/deltelefone', [
+    'as' => 'partial.telefone', 'uses' => 'AgendaController@apagarTelefone'
+]);
